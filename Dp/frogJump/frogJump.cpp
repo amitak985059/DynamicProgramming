@@ -15,6 +15,8 @@ int solve(int ind, vector<int>& height, vector<int>& dp){
 }
 
 
+
+
 int main() {
 
   vector<int> height{30,10,60 , 10 , 60 , 50};
