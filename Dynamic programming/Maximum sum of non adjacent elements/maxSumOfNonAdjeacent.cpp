@@ -11,7 +11,7 @@ int f(int ind, vector<int> &nums, vector<int> &dp)
     int pick = nums[ind] + f(ind - 2, nums);
     int notPick = 0 + f(ind - 1, nums);
 
-    return dp[ind] = (pick, notPick);
+    return dp[ind] = max(pick, notPick);
 }
 int maximumNonAdjacentSum(vector<int> &nums)
 {
